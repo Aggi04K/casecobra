@@ -73,6 +73,7 @@ model parfums {
   id    Int      @id @default(autoincrement())
   name  String
   price Decimal? @db.Decimal(5, 2)
+  url   String?
 }
 
 enum OrderStatus {

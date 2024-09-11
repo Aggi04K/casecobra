@@ -15,15 +15,17 @@ export default async function Home() {
     <div className="bg-slate-50 grainy-light">
       <section>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-  {parfums.map((parfum, index) => (
-        <div key={index} className="bg-slate-200 rounded-lg flex">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+  {parfums?.map((parfum, index) => (
+    <Link key={index}  href={`/parfums/${parfum.id}`}>
+        <div className="bg-slate-200 rounded-2xl flex">
           <img src="/naxos.webp" className="w-1/2 h-full object-cover" alt={parfum.name} />
-          <div className="ml-4 flex flex-col justify-center">
+          <div className="ml-4 flex flex-col justify-center p-5">
             <p>{parfum.name}</p>
             <p>Preis: {parfum.price}€</p>
           </div>
         </div>
+        </Link>
       ))}
 </div>
           
