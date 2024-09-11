@@ -8,6 +8,7 @@ import Link from "next/link";
 import { db } from '@/db'
 
 export default async function Home() {
+  debugger
     const parfums = await db.parfums.findMany()
     console.log(parfums)
   return (
