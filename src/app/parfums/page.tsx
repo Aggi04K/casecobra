@@ -19,7 +19,7 @@ export default async function Home() {
   {parfums?.map((parfum, index) => (
     <Link key={index}  href={`/parfums/${parfum.id}`}>
         <div className="bg-slate-200 rounded-2xl flex">
-          <img src="/naxos.webp" className="w-1/2 h-full object-cover" alt={parfum.name} />
+          <img src={parfum.url} className="w-1/2 h-full max-h-96 object-contain" alt={parfum.name} />
           <div className="ml-4 flex flex-col justify-center p-5">
             <p>{parfum.name}</p>
             <p>Preis: {parfum.price}€</p>

@@ -18,10 +18,12 @@ export default async function Home({ params }: { params: { id: string } }) {
   return (
      <div className="bg-slate-50 grainy-light">
       <section>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-  {params.id}
+        <div className="flex justify-center items-start">
+      <img src={parfum?.url} width={600}/>
+      </div>
+        <div className="mt-8 flex items-start justify-center text-4xl font-bold">
   {parfum?.name}
-  <img src={parfum?.url} />
+  
 </div>
       </section>
     </div>
