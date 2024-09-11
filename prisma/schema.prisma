@@ -4,8 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  //url      = env("DATABASE_URL")
-  url = "postgresql://ecommerce_db_dev_owner:wQ7WSKoxt3Ri@ep-square-truth-a24syjwb.eu-central-1.aws.neon.tech/ecommerce_db_dev?sslmode=require"
+  url      = env("DATABASE_URL")
 }
 
 enum OrderStatus {
