@@ -21,6 +21,13 @@ const Navbar = async () => {
           <div className='h-full flex items-center space-x-4'>
             {user ? (
               <>
+              <Link href='/parfums'
+              className={buttonVariants({
+                size: 'sm',
+                variant: 'ghost',
+              })}>
+                Parfum
+              </Link>
                 <Link
                   href='/api/auth/logout'
                   className={buttonVariants({
