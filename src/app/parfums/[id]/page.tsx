@@ -21,10 +21,13 @@ export default async function Home({ params }: { params: { id: string } }) {
         <div className="flex justify-center items-start">
       <img src={parfum?.url} width={600}/>
       </div>
-        <div className="mt-8 flex items-start justify-center text-4xl font-bold">
-  {parfum?.name}
-  
-</div>
+        <div className="mt-8 flex flex-col items-center text-4xl font-bold gap-4">
+          <p>{parfum?.name}</p>
+          <p>Preis: {parfum?.price}</p>
+      </div>
+      <div>
+        <p>{parfum?.description}</p>
+      </div>
       </section>
     </div>
 
