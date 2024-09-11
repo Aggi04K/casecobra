@@ -17,7 +17,7 @@ const Phone = ({ imgSrc, className, dark = false, ...props }: PhoneProps) => {
       <img
         src={
           dark
-            ? '/naxos.webp'
+            ? '/erba-pura.webp'
             : '/naxos.webp' 
         } 
         className='pointer-events-none z-50 select-none'
